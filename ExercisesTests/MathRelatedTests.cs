@@ -15,12 +15,13 @@ namespace Exercises.Tests
         public void ReturnSumOfEvenNumbersTest()
        {
             // arrange
-            int[] ArrayOfInts = new int[4];
+            int[] ArrayOfInts = new int[5];
             ArrayOfInts[0] = 2;
             ArrayOfInts[1] = 15;
             ArrayOfInts[2] = 16;
             ArrayOfInts[3] = 13;
-            
+            ArrayOfInts[4] = 0;
+
 
             var x = new MathRelated();
             int actual = x.ReturnSumOfEvenNumbers(ArrayOfInts);
@@ -34,11 +35,12 @@ namespace Exercises.Tests
         public void ReturnSumOfOddNumbersTest()
         {
             // arrange
-            int[] ArrayOfInts = new int[4];
+            int[] ArrayOfInts = new int[5];
             ArrayOfInts[0] = 2;
             ArrayOfInts[1] = 15;
             ArrayOfInts[2] = 16;
             ArrayOfInts[3] = 13;
+            ArrayOfInts[4] = 0;
 
 
             var x = new MathRelated();
