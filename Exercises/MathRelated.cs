@@ -13,5 +13,11 @@ namespace Exercises
         {
             return ArrayOfInts.Where(x => x % 2 == 0).Sum();
         }
+
+        //Given an array of ints, write a C# method to total all of the values that are odd numbers
+        public int ReturnSumOfOddNumbers(int[] ArrayOfInts)
+        {
+            return ArrayOfInts.Where(x => x % 2 == 1).Sum();
+        }
     }
 }

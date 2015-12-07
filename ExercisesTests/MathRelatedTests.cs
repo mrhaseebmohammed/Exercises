@@ -29,5 +29,24 @@ namespace Exercises.Tests
             
             Assert.AreEqual(actual,expected);
         }
+
+        [TestMethod()]
+        public void ReturnSumOfOddNumbersTest()
+        {
+            // arrange
+            int[] ArrayOfInts = new int[4];
+            ArrayOfInts[0] = 2;
+            ArrayOfInts[1] = 15;
+            ArrayOfInts[2] = 16;
+            ArrayOfInts[3] = 13;
+
+
+            var x = new MathRelated();
+            int actual = x.ReturnSumOfOddNumbers(ArrayOfInts);
+
+            int expected = 28;
+
+            Assert.AreEqual(actual, expected);
+        }
     }
 }
