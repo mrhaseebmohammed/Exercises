@@ -126,5 +126,20 @@ namespace Exercises.Tests
 
             Assert.AreEqual(actual, expected);
         }
+
+        //write code to calculate the circumference of the circle, without modifying the Circle class itself.
+        [TestMethod()]
+        public void CalculateCircumferenceTest()
+        {
+            var circle = new MathRelated.Circle(2);
+
+            var radius = circle.CalculateCircumference(r => r);
+            var circumference = circle.CalculateCircumference(r => r * Math.PI * 2);
+            var roundedCircumference = Math.Round(circumference, 2);
+
+            Assert.AreEqual(radius, 2);
+            Assert.AreEqual(roundedCircumference, 12.57);
+        }
+
     }
 }

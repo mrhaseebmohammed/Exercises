@@ -19,5 +19,24 @@ namespace Exercises
         {
             return ArrayOfInts != null ? ArrayOfInts.Where(x => x % 2 == 1).Sum() : 0;
         }
+
+
+        //Given an instance circle of the following class:
+        //write code to calculate the circumference of the circle, without modifying the Circle class itself.
+        public sealed class Circle
+        {
+            private double radius;
+
+            public double CalculateCircumference(Func<double, double> op)
+            {
+                return op(radius);
+            }
+
+            public Circle(int newRadius)
+            {
+                radius = newRadius;
+            }
+        }
+        
     }
 }
