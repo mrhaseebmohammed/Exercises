@@ -48,5 +48,81 @@ namespace Exercises.Tests
 
             Assert.AreEqual(actual, expected);
         }
+
+        [TestMethod()]
+        public void ReturnSumOfEvenNumbersTestWithNoInput()
+        {
+            // arrange
+            int[] ArrayOfInts = new int[4];
+            //ArrayOfInts[0] = 2;
+            //ArrayOfInts[1] = 15;
+            //ArrayOfInts[2] = 16;
+            //ArrayOfInts[3] = 13;
+
+
+            var x = new MathRelated();
+            int actual = x.ReturnSumOfEvenNumbers(ArrayOfInts);
+
+            int expected = 0;
+
+            Assert.AreEqual(actual, expected);
+        }
+
+        [TestMethod()]
+        public void ReturnSumOfOddNumbersTestWithNoInput()
+        {
+            // arrange
+            int[] ArrayOfInts = new int[4];
+            //ArrayOfInts[0] = 2;
+            //ArrayOfInts[1] = 15;
+            //ArrayOfInts[2] = 16;
+            //ArrayOfInts[3] = 13;
+
+
+            var x = new MathRelated();
+            int actual = x.ReturnSumOfOddNumbers(ArrayOfInts);
+
+            int expected = 0;
+
+            Assert.AreEqual(actual, expected);
+        }
+
+        [TestMethod()]
+        public void ReturnSumOfEvenNumbersTestWithNull()
+        {
+            // arrange
+            //int[] ArrayOfInts = new int[4];
+            //ArrayOfInts[0] = 2;
+            //ArrayOfInts[1] = 15;
+            //ArrayOfInts[2] = 16;
+            //ArrayOfInts[3] = 13;
+
+
+            var x = new MathRelated();
+            int actual = x.ReturnSumOfEvenNumbers(null);
+
+            int expected = 0;
+
+            Assert.AreEqual(actual, expected);
+        }
+
+        [TestMethod()]
+        public void ReturnSumOfOddNumbersTestWithNull()
+        {
+            // arrange
+            //int[] ArrayOfInts = new int[4];
+            //ArrayOfInts[0] = 2;
+            //ArrayOfInts[1] = 15;
+            //ArrayOfInts[2] = 16;
+            //ArrayOfInts[3] = 13;
+
+
+            var x = new MathRelated();
+            int actual = x.ReturnSumOfOddNumbers(null);
+
+            int expected = 0;
+
+            Assert.AreEqual(actual, expected);
+        }
     }
 }
