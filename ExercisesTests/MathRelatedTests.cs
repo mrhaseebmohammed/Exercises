@@ -153,5 +153,14 @@ namespace Exercises.Tests
 
             Assert.AreEqual(23, sum);
         }
+        [TestMethod()]
+        public void SumOfMultiplesOf3or5Test1000Test()
+        {
+            var x = new MathRelated();
+
+            var sum = x.SumOfMultiplesOf3or5(1000);
+
+            Assert.AreEqual(233168, sum);
+        }
     }
 }
